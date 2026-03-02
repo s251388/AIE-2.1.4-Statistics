@@ -5,7 +5,7 @@
 using namespace std;
 
 
-int Accuracy(int Shots, int Hits) {
+int Accuracy(int Hits, int Shots) {
 
 	assert(Shots >= Hits >= 0);
 
@@ -21,7 +21,11 @@ int Accuracy(int Shots, int Hits) {
 int main()
 {
     
-
+	assert(Accuracy(3, 4) == 75);
+	assert(Accuracy(1, 2) == 50);
+	assert(Accuracy(13, 13) == 100);
+	assert(Accuracy(21, 173) == 12);
+	assert(Accuracy(0, 0) == 0);
 
 }
 
